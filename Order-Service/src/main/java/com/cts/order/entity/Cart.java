@@ -1,20 +1,9 @@
-package com.cts.cart.entity;
+package com.cts.order.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
-@Entity
 public class Cart {
 
-	@Id
-	@GeneratedValue
 	private int cartId;
 	private String user;
-	@ManyToOne
-	@JoinColumn(name = "id")
 	private Product item;
 	private int qty;
 	private double itemTotal;
